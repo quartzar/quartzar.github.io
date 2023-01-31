@@ -1,4 +1,7 @@
 {
+  "homepage": "https://quartzar.github.io/",
+  "name": "quartzar",
+
   "private": true,
   "scripts": {
     "build": "nuxt build",
