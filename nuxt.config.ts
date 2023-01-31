@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   typescript: {
     shim: false
   },
-  target: 'static',
+  // target: 'static',
   // ssr: false,
   router: {
     base: '/' 
