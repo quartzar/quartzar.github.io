@@ -1,0 +1,6 @@
+name: Deploy to GH-Pages
+
+on: [push, pull_request]
+
+jobs:
+  
