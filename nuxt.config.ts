@@ -7,5 +7,8 @@ export default defineNuxtConfig({
   router: {
     base: '/' 
   },
-  modules: ['@nuxt/content']
+  modules: [
+    '@nuxt/content',
+    'nuxt-icon'
+  ]
 })
