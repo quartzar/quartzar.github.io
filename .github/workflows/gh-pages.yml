@@ -9,6 +9,10 @@ on:
 jobs:
   deploy:
     runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [14]
     permissions:
       contents: write
     concurrency:
