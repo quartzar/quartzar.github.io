@@ -6,7 +6,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "start": "nuxt start",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@nuxt/content": "^2.4.2",
@@ -18,6 +20,7 @@
     "eslint-plugin-nuxt": "^4.0.0",
     "nuxt": "^3.1.1",
     "nuxt-icon": "^0.2.10",
+    "push-dir": "^0.4.1",
     "unocss": "^0.49.1"
   },
   "dependencies": {
