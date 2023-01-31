@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   target: 'static',
   router: {
-    base: 'quartzar.github.io/'
+    base: '/quartzar.github.io/'
   },
   modules: ['@nuxt/content']
 })
