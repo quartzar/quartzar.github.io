@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   // target: 'static',
   // ssr: false,
   router: {
-    base: '/'
+    base: '/' 
   },
   modules: ['@nuxt/content']
 })
