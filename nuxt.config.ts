@@ -2,6 +2,9 @@
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  typescript: {
+    shim: false
+  },
   // target: 'static',
   // ssr: false,
   router: {
@@ -26,5 +29,12 @@ export default defineNuxtConfig({
     // core options
     shortcuts: [],
     rules: [],
+  },
+
+  head: {
+    link: [
+      // { rel: 'icon', type: 'image/gif', href: '~/public/animated_favigon.gif'},
+      { rel: 'icon', type: 'image/x-icon', href: '~/public/favicon.ico' }
+    ]
   },
 })
