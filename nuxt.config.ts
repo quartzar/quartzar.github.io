@@ -7,9 +7,9 @@ export default defineNuxtConfig({
   },
   // target: 'static',
   // ssr: false,
-  // router: {
-  //   base: '/' 
-  // },
+  router: {
+    base: '/' 
+  },
 
   modules: [
     // NUXT 
