@@ -97,6 +97,7 @@ jobs:
 
   # Deployment Job
   deploy:
+    steps:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
