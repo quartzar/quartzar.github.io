@@ -7,9 +7,9 @@ export default defineNuxtConfig({
   },
   // target: 'static',
   // ssr: false,
-  router: {
-    base: '/' 
-  },
+  // router: {
+  //   base: '/' 
+  // },
 
   modules: [
     // NUXT 
@@ -36,5 +36,5 @@ export default defineNuxtConfig({
       // { rel: 'icon', type: 'image/gif', href: '~/public/animated_favigon.gif'},
       { rel: 'icon', type: 'image/x-icon', href: '~/public/favicon.ico' }
     ]
-  },
+  }
 })
