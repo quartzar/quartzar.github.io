@@ -7,8 +7,24 @@ export default defineNuxtConfig({
   router: {
     base: '/' 
   },
+
   modules: [
+    // NUXT 
     '@nuxt/content',
-    'nuxt-icon'
-  ]
+    'nuxt-icon',
+    // UNOCSS
+    '@unocss/nuxt'
+  ],
+
+  // CONFIGURATION
+  unocss: {
+    // presets
+    uno: true, // enabled `@unocss/preset-uno`
+    icons: true, // enabled `@unocss/preset-icons`
+    attributify: true, // enabled `@unocss/preset-attributify`,
+
+    // core options
+    shortcuts: [],
+    rules: [],
+  },
 })

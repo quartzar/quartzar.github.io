@@ -20,6 +20,8 @@
 
     "@nuxt/content": "^2.4.2",
 
+    "@unocss/nuxt": "^0.49.1",
+
     "nuxt": "^3.1.1",
 
     "nuxt-icon": "^0.2.10"
