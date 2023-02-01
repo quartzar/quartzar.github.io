@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     // '@vueuse/nuxt',
   ],
-  target: 'static',
+  // target: 'static',
   // https://github.com/nuxt-community/google-fonts-module
   
   
@@ -31,7 +31,7 @@ export default defineNuxtConfig({
     // Doc: https://github.com/unocss/unocss
     '@unocss/nuxt',
     // './modules/auto-import-eslint',
-    '@nuxtjs/postcss',
+    // '@nuxtjs/postcss',
     // Simple usage
     // '@nuxtjs/google-fonts',
     // With options
