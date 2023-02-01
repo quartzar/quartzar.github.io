@@ -13,8 +13,6 @@
   },
   "devDependencies": {
     "@headlessui/vue": "^1.6.4",
-    "@iconify/icons-heroicons": "^1.0.1",
-    "@iconify/vue": "^3.2.1",
     "@nuxt/content": "^2.0.0",
     "@nuxtjs/color-mode": "^3.0.3",
     "@nuxtjs/eslint-config-typescript": "^10.0.0",
