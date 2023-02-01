@@ -12,7 +12,7 @@
   </div>
 </template>
 
-<style lang="postcss">
+<style>
 body {
   @apply transition-all ease-in-out bg-indigo-50 dark:bg-zinc-940;
 }

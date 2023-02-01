@@ -77,7 +77,7 @@ export default defineNuxtConfig({
         ],
       },
     },
-    autoImport: false, // enabled importing tailwind.css
+    autoImport: true, // enabled importing tailwind.css
     // transformerDirectives: true, // enabled '@unocss/transformer-directives'
  
     // core options
@@ -116,18 +116,18 @@ export default defineNuxtConfig({
   },
 
 
-  postcss: {
-    plugins: {
-        'postcss-import': {},
-        'tailwindcss/nesting': {},
-        tailwindcss: {},
-        autoprefixer: {},
-    },
-  },
+  // postcss: {
+  //   plugins: {
+  //       'postcss-import': {},
+  //       'tailwindcss/nesting': {},
+  //       tailwindcss: {},
+  //       autoprefixer: {},
+  //   },
+  // },
   // Global Page Headers: https://go.nuxtjs.dev/config-head
   css: [
-    // 'normalise.css',
-    '~/assets/css/style.css',
+    '@unocss/reset/normalize.css',
+    // '~/assets/css/style.css',
   ],
 
   head: {
