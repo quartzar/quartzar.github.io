@@ -1,5 +1,8 @@
-// import { defineNuxtConfig } from 'nuxt3';
+import { defineNuxtConfig } from 'nuxt/config';
+import transformerDirective from '@unocss/transformer-directives'
 // import presetWebFonts from '@unocss/preset-web-fonts'
+
+import { transformerDirectives } from "unocss";
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -44,11 +47,14 @@ export default defineNuxtConfig({
   unocss: {
     preflight: true,
     // presets
+    
     uno: true, // enabled `@unocss/preset-uno`
     icons: true, // enabled `@unocss/preset-icons`
     attributify: true, // enabled `@unocss/preset-attributify`,
     typography: true, // enabled '@unocss/preset-typography'
+    
     // webFonts: true, // enabled '@unocss/preset-web-fonts'
+    
     webFonts: {
       provider: 'google', // default provider
       fonts: {
@@ -71,11 +77,14 @@ export default defineNuxtConfig({
         ],
       },
     },
-    autoImport: true, // enabled importing tailwind.css
+    // autoImport: true, // enabled importing tailwind.css
     // transformerDirectives: true, // enabled '@unocss/transformer-directives'
  
     // core options
     shortcuts: [],
+    transformers: [
+      transformerDirective({ enforce: 'pre' }),
+    ],
     rules: [],
   },
   // https://tailwindcss.nuxtjs.org/examples/tailwindui
@@ -105,6 +114,14 @@ export default defineNuxtConfig({
       theme: 'material-default'
     }
   },
+
+
+
+  // Global Page Headers: https://go.nuxtjs.dev/config-head
+  css: [
+    '~/assets/css/style.css',
+  ],
+
   head: {
     link: [
       // { rel: 'icon', type: 'image/gif', href: '~/public/animated_favigon.gif'},
