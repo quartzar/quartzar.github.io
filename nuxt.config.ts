@@ -128,7 +128,7 @@ export default defineNuxtConfig({
   // Global Page Headers: https://go.nuxtjs.dev/config-head
   css: [
     '@unocss/reset/normalize.css',
-    // '~/assets/css/style.css',
+    '~/assets/css/style.css',
   ],
 
   head: {

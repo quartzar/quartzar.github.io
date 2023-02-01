@@ -10,6 +10,7 @@
             <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
           </DisclosureButton>
         </div>
+        <!--  -->
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex-shrink-0 flex items-center">
             <img class="block lg:hidden h-8 w-auto" src="/logo_small.gif" alt="Quartzar" />
