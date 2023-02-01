@@ -6,21 +6,20 @@
       <template #not-found>
         
         <h1 class="prose text-4xl text-white text-center font-sans font-black pb-5">
-          uhhh, oops?
+          Oops! 
         </h1>
         <p class ="text-lg text-white text-center font-sans ">
-          this page doesn't exist, how have you managed that?<br>
-          are you ok?<br><br>
+          This page doesn't exist...<br>
           <a href="/" class="transition-all ease-in-out font-bold font-sans italic border-4 border-transparent leading-none hover:text-9xl hover:not-italic hover:text-black hover:border-4 hover:rounded-lg hover:px-6 duration-[2500ms] hover:bg-yellow-500 hover:shadow-[0px_0px_60px_-5px_rgba(0,0,0,1)] hover:shadow-indigo-600">back home</a>
         </p>
-        <img src="https://i2.lensdump.com/i/tqu27v.jpg" alt="really_funny_whale_porn.jpg" class="my-10 mx-auto rounded-xl shadow-[0px_0px_60px_-15px_rgba(0,0,0,1)] shadow-indigo-600 hover:shadow-indigo-600/75 transition-all ease-in-out"/>
-        <img src="https://i.lensdump.com/i/tBg3D1.png" alt="tom_booth_snorts_jesus.png" class="my-10 mx-auto rounded-xl shadow-[0px_0px_60px_-15px_rgba(0,0,0,1)] shadow-indigo-600 hover:shadow-indigo-600/75 transition-all ease-in-out"/>
+        <!-- <img src="https://i2.lensdump.com/i/tqu27v.jpg" alt="really_funny_whale_porn.jpg" class="my-10 mx-auto rounded-xl shadow-[0px_0px_60px_-15px_rgba(0,0,0,1)] shadow-indigo-600 hover:shadow-indigo-600/75 transition-all ease-in-out"/>
+        <img src="https://i.lensdump.com/i/tBg3D1.png" alt="tom_booth_snorts_jesus.png" class="my-10 mx-auto rounded-xl shadow-[0px_0px_60px_-15px_rgba(0,0,0,1)] shadow-indigo-600 hover:shadow-indigo-600/75 transition-all ease-in-out"/> -->
       </template>
     </ContentDoc>
   </div>
 </template>
 
-<style lang="postcss">
+<style>
   /* Customize headers to remove default underline */
   .prose h2 a,
   .prose h3 a {
