@@ -2,7 +2,7 @@ import { defineNuxtConfig } from 'nuxt/config';
 import transformerDirective from '@unocss/transformer-directives'
 // import presetWebFonts from '@unocss/preset-web-fonts'
 
-import { transformerDirectives } from "unocss";
+// import { transformerDirectives } from "unocss";
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -116,9 +116,17 @@ export default defineNuxtConfig({
   },
 
 
-
+  postcss: {
+    plugins: {
+        'postcss-import': {},
+        'tailwindcss/nesting': {},
+        tailwindcss: {},
+        autoprefixer: {},
+    },
+  },
   // Global Page Headers: https://go.nuxtjs.dev/config-head
   css: [
+    // 'normalise.css',
     '~/assets/css/style.css',
   ],
 
