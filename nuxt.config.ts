@@ -23,7 +23,8 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     // '@vueuse/nuxt',
   ],
-  // target: 'static',
+  // ssr: false,
+  target: 'static',
   // https://github.com/nuxt-community/google-fonts-module
   
   
