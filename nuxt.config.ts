@@ -77,7 +77,7 @@ export default defineNuxtConfig({
         ],
       },
     },
-    // autoImport: true, // enabled importing tailwind.css
+    autoImport: false, // enabled importing tailwind.css
     // transformerDirectives: true, // enabled '@unocss/transformer-directives'
  
     // core options

@@ -24,7 +24,7 @@
     "@unocss/preset-typography": "^0.37.1",
     "@unocss/preset-uno": "^0.37.1",
     "@unocss/preset-web-fonts": "^0.37.1",
-    "@unocss/reset": "^0.37.1",
+    "@unocss/reset": "^0.37.4",
     "@unocss/transformer-directives": "^0.37.4",
     "@vueuse/core": "^8.5.0",
     "autoprefixer": "^10.4.7",
@@ -41,7 +41,6 @@
   "dependencies": {
     "@heroicons/vue": "^2.0.14",
     "@nuxtjs/device": "^3.0.0",
-    "@tailwindcss/typography": "^0.5.9",
-    "normalize.css": "^8.0.1"
+    "@tailwindcss/typography": "^0.5.9"
   }
 }
