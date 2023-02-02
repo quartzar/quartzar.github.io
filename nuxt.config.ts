@@ -1,60 +1,48 @@
 import { defineNuxtConfig } from 'nuxt/config';
 import transformerDirective from '@unocss/transformer-directives'
-// import presetWebFonts from '@unocss/preset-web-fonts'
-
-// import { transformerDirectives } from "unocss";
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  typescript: {
-    shim: false
-  },
-  router: {
-    base: '/' 
-  },
+  typescript: { shim: false },
+  target: 'static',
+  router: { base: '/' },
+  // transition: { name: 'page', mode: 'out-in' },
+  // pageTransition: {
+  //   name: 'my-page',
+  //   mode: 'out-in',
+  //   beforeEnter (el) {
+  //     console.log('Before enter...');
+  //   }
+  // },
 
 
   ////////////////////
   modules: [
     '@nuxt/content',
-    // '@nuxtjs/tailwindcss',
     '@unocss/nuxt',
     '@unocss/preset-web-fonts',
+    '@unocss/preset-icons',
+    '@unocss/preset-attributify',
+    '@unocss/preset-typography',
     '@nuxtjs/color-mode',
     // '@vueuse/nuxt',
   ],
-  // ssr: false,
-  target: 'static',
-  // https://github.com/nuxt-community/google-fonts-module
   
   
   /////////////////////
   buildModules: [
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    // "@nuxtjs/tailwindcss",
-    // Doc: https://github.com/unocss/unocss
     '@unocss/nuxt',
-    // './modules/auto-import-eslint',
-    // '@nuxtjs/postcss',
-    // Simple usage
-    // '@nuxtjs/google-fonts',
-    // With options
-    // ['@nuxtjs/google-fonts', { /* module options */ }]
   ],
-  // Doc: https://github.com/unocss/unocss/tree/main/packages/nuxt
   
   
-  ////////////////////
+  // https://github.com/unocss/unocss/tree/main/packages/nuxt
   unocss: {
     preflight: true,
-    // presets
-    
-    uno: true, // enabled `@unocss/preset-uno`
-    icons: true, // enabled `@unocss/preset-icons`
-    attributify: true, // enabled `@unocss/preset-attributify`,
-    typography: true, // enabled '@unocss/preset-typography'
-    
-    // webFonts: true, // enabled '@unocss/preset-web-fonts'
+    // Presets
+    uno: true, // `@unocss/preset-uno`
+    icons: true, // `@unocss/preset-icons`
+    attributify: true, // `@unocss/preset-attributify`,
+    typography: true, // '@unocss/preset-typography'
     
     webFonts: {
       provider: 'google', // default provider
@@ -79,31 +67,21 @@ export default defineNuxtConfig({
       },
     },
     autoImport: true, // enabled importing tailwind.css
-    // transformerDirectives: true, // enabled '@unocss/transformer-directives'
  
-    // core options
+    // Core Options
     shortcuts: [],
     transformers: [
       transformerDirective({ enforce: 'pre' }),
     ],
     rules: [],
   },
-  // https://tailwindcss.nuxtjs.org/examples/tailwindui
-  // googleFonts: {
-  //   families: {
-  //     Poppins: true,
-  //     Recursive: true,
-  //   }
-  // },
 
-  // tailwindcss: {
-  //   jit: true
-  // },
 
   // https://color-mode.nuxtjs.org
   colorMode: {
     classSuffix: ''
   },
+
 
   // https://content.nuxtjs.org
   content: {
@@ -117,23 +95,16 @@ export default defineNuxtConfig({
   },
 
 
-  // postcss: {
-  //   plugins: {
-  //       'postcss-import': {},
-  //       'tailwindcss/nesting': {},
-  //       tailwindcss: {},
-  //       autoprefixer: {},
-  //   },
-  // },
-  // Global Page Headers: https://go.nuxtjs.dev/config-head
+  // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-css
   css: [
     '@unocss/reset/normalize.css',
-    '~/assets/css/style.css',
+    '~/assets/css/main.css',
   ],
 
+
+  // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-head
   head: {
     link: [
-      // { rel: 'icon', type: 'image/gif', href: '~/public/animated_favigon.gif'},
       { rel: 'icon', type: 'image/x-icon', href: '~/public/favicon.ico' }
     ]
   },
