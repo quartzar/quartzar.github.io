@@ -3,17 +3,13 @@ import transformerDirective from '@unocss/transformer-directives'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  
   typescript: { shim: false },
+  
   target: 'static',
+  
   router: { base: '/' },
-  // transition: { name: 'page', mode: 'out-in' },
-  // pageTransition: {
-  //   name: 'my-page',
-  //   mode: 'out-in',
-  //   beforeEnter (el) {
-  //     console.log('Before enter...');
-  //   }
-  // },
+  
 
 
   ////////////////////
@@ -85,6 +81,7 @@ export default defineNuxtConfig({
 
   // https://content.nuxtjs.org
   content: {
+    documentDriven: true,
     navigation: {
       fields: ['navTitle']
     },
