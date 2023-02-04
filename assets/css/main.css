@@ -28,6 +28,12 @@ html {
   }
 }
 
+/* Glowing Text */
+.glow-green-txt {
+  text-shadow: rgba(123,255,0,1) 0px 0px 105px; 
+}
+
+
 .cssbg {
   background: linear-gradient(315deg, #207e91, #1c8092, #0c8492, #008a92, #009290, #00998a, #21a181, #3fa775, #57ad6a, #6ab060, #77b259, #7cb357);
 

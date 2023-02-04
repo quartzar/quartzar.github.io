@@ -17,7 +17,7 @@
 
 <template>
   <div>
-    <div class="transition-container prose text-zinc-200 text-justify 
+    <div class="transition-container prose text-zinc-200 
                 max-w-none flex-auto container
                 sm:mx-auto sm:max-w-3xl
                 lg:mx-auto lg:max-w-4xl">
@@ -28,6 +28,10 @@
 
 
 <style>
+  
+  .nuxt-content h1{
+    --at-apply: font-center
+  }
 
   /* Remove header default underline */
   .prose h2 a,
@@ -39,9 +43,13 @@
     --at-apply: font-sans
   }
 
+  /* H1 options */
+  /* .prose h1 {
+    --at-apply: text-shadow: 
+  } */
   
   .prose p {
-    --at-apply: no-underline font-sans
+    --at-apply: font-sans text-justify
   }
 </style>
 
