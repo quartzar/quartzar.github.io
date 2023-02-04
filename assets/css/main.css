@@ -44,3 +44,46 @@
   /* background-color: #A9C9FF;
   background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%); */
 }
+
+.navb-css-1 {
+  background: linear-gradient(90deg, #07001480, #1e022d80, #41064380, #570d4380, #69153980, #79202a80, #863f2e80, #91673d80);
+}
+
+
+/* .navbar-css-wrapper {  */
+  /* height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute; */
+/* background: linear-gradient(124deg, #ff22003d, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+} */

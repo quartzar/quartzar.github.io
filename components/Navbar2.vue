@@ -1,6 +1,6 @@
-<!-- dark:bg-indigo-900/50 -->
+<!-- dark:bg-indigo-900/50 bg-gray-900/50-->
 <template>
-  <Disclosure as="nav" class="bg-gray-900/50 backdrop-blur-lg" v-slot="{ open }">
+  <Disclosure as="nav" class="navb-css-1 backdrop-blur-lg" v-slot="{ open }">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 relative flex items-center justify-between h-[3.7rem]">
       <!-- <div class="relative flex items-center justify-between h-[3.7rem]"> -->
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -15,11 +15,11 @@
       <!--  -->
       <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
         <div class="flex-shrink-0 flex items-center">
-          <img class="block lg:hidden h-8 w-auto" src="/logo_small.gif" alt="quartzar" />
-          <img class="hidden lg:block h-[1.9rem] w-auto" src="/logo_full.gif" alt="quartzar" />
+          <img class="block md:hidden h-8 w-auto" src="/logo_small.gif" alt="quartzar" />
+          <img class="hidden md:block lg:ml-15/12 md:ml-3.5/12 h-[1.9rem] w-auto" src="/logo_full.gif" alt="quartzar" />
         </div>
-        <div class="hidden sm:block sm:ml-8">
-          <div class="flex justify-between px-4 mx-auto text-gray-200 font-serif">
+        <div class="hidden sm:block flex sm:ml-7.5/12 md:ml-6.25/12 lg:ml-6.75/12">
+          <div class="flex justify-between px-9 mx-auto text-gray-200 font-serif">
             <ContentNavigation v-slot="{ navigation }">
               <NuxtLink v-for="link of navigation" :key="link._path" :to="link._path"
                 active-class="font-bold font-serif px-2 py-1 rounded-md bg-slate-900/25 shadow-sm shadow-slate-900 transition-all ease-in-out"

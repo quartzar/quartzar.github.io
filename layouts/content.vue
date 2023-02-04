@@ -18,7 +18,9 @@
 <template>
   <div>
     <div class="transition-container prose text-zinc-200 text-justify 
-                max-w-none md:container md:mx-auto md:w-9/12">
+                max-w-none flex-auto container
+                sm:mx-auto sm:max-w-3xl
+                lg:mx-auto lg:max-w-4xl">
       <slot/>
     </div>
   </div>
@@ -26,19 +28,19 @@
 
 
 <style>
-  /* Customize headers to remove default underline */
+  /* Remove header default underline */
   .prose h2 a,
   .prose h3 a {
     --at-apply: no-underline 
   }
-  .prose h1 {
+  /* Set headers to use sans font */
+  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
     --at-apply: font-sans
   }
+
+  
   .prose p {
     --at-apply: no-underline font-serif
-  }
-  h1 {
-    --at-apply: animate-bounce-alt animate-count-infinite
   }
 </style>
 

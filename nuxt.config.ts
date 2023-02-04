@@ -52,8 +52,8 @@ export default defineNuxtConfig({
       provider: 'google', // default provider
       fonts: {
         // these will extend the default theme
-        sans: 'Poppins',
-        serif: 'JetBrains Mono',
+        sans: 'Rubik',
+        serif: 'Rubik',
         mono: ['Fira Code', 'Fira Mono:400,700'],
         // custom ones
         lobster: 'Lobster',
