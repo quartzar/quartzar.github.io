@@ -1,3 +1,7 @@
+html {
+  font-family: Rubik, system-ui, sans-serif;
+}
+
 .navbar-fixed-top {
   position: fixed;   /* fixing the position takes it out of html flow - knows
                      nothing about where to locate itself except by browser

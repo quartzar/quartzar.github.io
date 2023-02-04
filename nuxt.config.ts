@@ -52,22 +52,27 @@ export default defineNuxtConfig({
       provider: 'google', // default provider
       fonts: {
         // these will extend the default theme
-        sans: 'Rubik',
-        serif: 'Rubik',
+        sans: [
+          {
+            name: 'Rubik',
+            weights: ['400', '800'],
+          }
+        ],
+        serif: 'Poppins',
         mono: ['Fira Code', 'Fira Mono:400,700'],
         // custom ones
         lobster: 'Lobster',
-        lato: [
-          {
-            name: 'Lato',
-            weights: ['400', '700'],
-            italic: true,
-          },
-          {
-            name: 'sans-serif',
-            provider: 'none',
-          },
-        ],
+        // lato: [
+        //   {
+        //     name: 'Lato',
+        //     weights: ['400', '700'],
+        //     italic: true,
+        //   },
+        //   {
+        //     name: 'sans-serif',
+        //     provider: 'none',
+        //   },
+        // ],
       },
     },
     autoImport: true, // enabled importing tailwind.css
@@ -110,7 +115,14 @@ export default defineNuxtConfig({
   // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-head
   head: {
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '~/public/favicon.ico' }
+      // { rel: 'icon', type: 'image/x-icon', href: '~/public/favicon.ico' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '~/public/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '~/public/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '~/public/favicon-16x16.png' },
+      { rel: 'manifest', href: '~/public/site.webmanifest' },
+      { rel: 'mask-icon', href: '~/public/safari-pinned-tab.svg', color: '#5bbad5' },
+      { name: 'msapplication-TileColor', content: '#da532c' },
+      { name: 'theme-color', content: '#ffffff' }
     ]
   },
 })

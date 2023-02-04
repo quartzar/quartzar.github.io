@@ -19,11 +19,11 @@
           <img class="hidden md:block lg:ml-15/12 md:ml-3.5/12 h-[1.9rem] w-auto" src="/logo_full.gif" alt="quartzar" />
         </div>
         <div class="hidden sm:block flex sm:ml-7.5/12 md:ml-6.25/12 lg:ml-6.75/12">
-          <div class="flex justify-between px-9 mx-auto text-gray-200 font-serif">
+          <div class="flex justify-between px-9 mx-auto text-gray-200 font-sans">
             <ContentNavigation v-slot="{ navigation }">
               <NuxtLink v-for="link of navigation" :key="link._path" :to="link._path"
-                active-class="font-bold font-serif px-2 py-1 rounded-md bg-slate-900/25 shadow-sm shadow-slate-900 transition-all ease-in-out"
-                class="mr-4 font-serif py-1 hover:px-2 hover:rounded-md hover:bg-slate-800/25 hover:shadow-sm hover:shadow-slate-900 transition-all ease-in-out">
+                active-class="font-bold font-sans px-2 py-1 rounded-md bg-slate-900/25 shadow-sm shadow-slate-900 transition-all ease-in-out"
+                class="mr-4 font-sans py-1 hover:px-2 hover:rounded-md hover:bg-slate-800/25 hover:shadow-sm hover:shadow-slate-900 transition-all ease-in-out">
                 {{ link.navTitle || link.title }}
               </NuxtLink>
             </ContentNavigation>

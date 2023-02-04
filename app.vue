@@ -6,6 +6,7 @@
     <Html lang="en" />
     <Meta property="og:image" content="/cover.jpg" />
     <Meta name="twitter:card" content="summary_large_image" />
+    
 
     <!-- Navbar -->
     <Navbar2 class='navbar-fixed-top rounded-b-[15px] border-b border-indigo-500 shadow-2xl shadow-indigo-600/50' />
@@ -33,6 +34,9 @@
 
 
 <style>
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;800&display=swap');
+
 /* Scrollbars for everything but FireFox */
 ::-webkit-scrollbar-track:hover {
   background: transparent;
@@ -57,6 +61,7 @@
 
 #app {
   /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  font-family: Rubik, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* scrollbar-color: #135aa1; */
