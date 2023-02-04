@@ -28,6 +28,9 @@
 
 
 <style>
+  /* Font import */
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;800&display=swap');
+
   /* Remove header default underline */
   .prose h2 a,
   .prose h3 a {
