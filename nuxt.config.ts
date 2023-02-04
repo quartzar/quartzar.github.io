@@ -1,5 +1,6 @@
 import { defineNuxtConfig } from 'nuxt/config';
 import transformerDirective from '@unocss/transformer-directives'
+// import { presetScrollbar } from 'unocss-preset-scrollbar'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -20,6 +21,8 @@ export default defineNuxtConfig({
     '@unocss/preset-icons',
     '@unocss/preset-attributify',
     '@unocss/preset-typography',
+    '@unocss/preset-uno',
+    '@unocss/webpack',
     '@nuxtjs/color-mode',
     // '@vueuse/nuxt',
   ],
@@ -39,13 +42,18 @@ export default defineNuxtConfig({
     icons: true, // `@unocss/preset-icons`
     attributify: true, // `@unocss/preset-attributify`,
     typography: true, // '@unocss/preset-typography'
+    // scrollbar: true, // `unocss-preset-scrollbar`
+
+    // presets: [
+    //   presetScrollbar,
+    // ],
     
     webFonts: {
       provider: 'google', // default provider
       fonts: {
         // these will extend the default theme
         sans: 'Poppins',
-        serif: 'Recursive',
+        serif: 'JetBrains Mono',
         mono: ['Fira Code', 'Fira Mono:400,700'],
         // custom ones
         lobster: 'Lobster',
@@ -63,7 +71,7 @@ export default defineNuxtConfig({
       },
     },
     autoImport: true, // enabled importing tailwind.css
- 
+    
     // Core Options
     shortcuts: [],
     transformers: [

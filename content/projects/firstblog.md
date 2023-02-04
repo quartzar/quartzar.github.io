@@ -1,8 +1,8 @@
 ---
 navTitle: 'hi'
+title: 'First Project Post'
+description: 'This is a test project post.'
 ---
-
-# Welcome
 
 This is a test project page.
 

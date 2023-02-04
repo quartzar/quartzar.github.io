@@ -1,5 +1,6 @@
+<!-- dark:bg-indigo-900/50 -->
 <template>
-  <Disclosure as="nav" class="bg-indigo-900 dark:bg-indigo-900/90 backdrop-blur-lg" v-slot="{ open }">
+  <Disclosure as="nav" class="bg-gray-900/50 backdrop-blur-lg" v-slot="{ open }">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 relative flex items-center justify-between h-[3.7rem]">
       <!-- <div class="relative flex items-center justify-between h-[3.7rem]"> -->
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -60,6 +61,4 @@
 <script setup>
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { BellIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
-
-
 </script>
