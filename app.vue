@@ -13,7 +13,7 @@
 
 
     <!-- Rest of Page -->
-    <div class="scroller md:pt-24 md:pb-18 min-h-screen bg-fixed bg-zinc-900">
+    <div class="scroller md:pt-28 md:pb-18 min-h-screen bg-fixed bg-zinc-900">
           <!-- /* style="url('/background.png')"> */ -->
 
       <NuxtPage/>

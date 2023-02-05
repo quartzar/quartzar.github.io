@@ -16,11 +16,12 @@
 </template> -->
 
 <template>
-  <div>
-    <div class="transition-container prose text-zinc-200 
+  <div></div>
+  <div class="sm:mx-auto sm:max-w-4xl
+              lg:mx-auto lg:max-w-5xl">
+    <div class="transition-container article text-zinc-200 
                 max-w-none flex-auto container text-justify
-                sm:mx-auto sm:max-w-3xl
-                lg:mx-auto lg:max-w-4xl">
+                ">
       <slot/>
     </div>
   </div>
@@ -28,48 +29,91 @@
 
 
 <style>
-  
+  .article {
+    font-size: 17px;
+    line-height: 24px;
+    --at-apply: font-sans
+  }
+  .article p {
+    --at-apply: px-2
+  }
+  .article a {
+    --at-apply: px-2
+  }
 
 
-.prose h1 {
-  border-radius: 11px;
-  background: linear-gradient(90deg, #0a001f, #130c31, #1d1245, #2a1558, #3a176b, #4c177e, #611390, #7705a1);
-  padding-left: 12px;
-  backdrop-filter: blur( 5px );-webkit-backdrop-filter: blur( 5px );
-  -webkit-box-shadow:0px 0px 60px 15px rgba(111,0,255,0.65);
-  -moz-box-shadow: 0px 0px 60px 15px rgba(111,0,255,0.65);
-  box-shadow: 0px 0px 60px 15px rgba(111,0,255,0.65);
-}
 
-  /* .nuxt-content h1{
-    --at-apply: font-center
+  .article h1 {
+    border-radius: 11px;
+    background: linear-gradient(90deg, #0a001f, #130c31, #1d1245, #2a1558, #3a176b, #4c177e, #611390, #7705a1);
+    backdrop-filter: blur( 5px );-webkit-backdrop-filter: blur( 5px );
+    -webkit-box-shadow:0px 0px 60px 15px rgba(111,0,255,0.65);
+    -moz-box-shadow: 0px 0px 60px 15px rgba(111,0,255,0.65);
+    box-shadow: 0px 0px 60px 15px rgba(111,0,255,0.65);
+    /* padding-left: 7px; */
+    margin-bottom: 0.75em;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    
+    --at-apply: text-5xl font-bold px-2
+  }
+
+  .article h2 {
+    margin-top: 0.75em;
+    margin-bottom: -0.25em;
+    --at-apply: text-3xl font-bold 
+  }
+
+  .article h3 {
+    margin-top: 0.4em;
+    margin-bottom: -0.5em;
+    --at-apply: text-2xl font-bold px-2
+  }
+
+  .article h3 a {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .article hr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    --at-apply: mx-2
+    
+  }
+
+  .article p {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    --at-apply: text-justify
+  }
+
+
+  /* .article h2 a,
+  .article h3 a {
+    --at-apply: no-underline transition-all ease-in
   } */
 
-  /* .prose h1 {
-  text-align: center;
-  font-family: sans-serif;
-  text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #00FFCC, 0 0 40px #00FFCC, 0 0 50px #00FFCC, 0 0 60px #00FFCC, 0 0 70px #00FFCC;
-} */
 
 
   /* Remove header default underline */
-  .prose h2 a,
+  /* .prose h2 a,
   .prose h3 a {
     --at-apply: no-underline 
-  }
+  } */
   /* Set headers to use sans font */
-  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  /* .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
     --at-apply: font-sans 
-  }
+  } */
 
   /* H1 options */
   /* .prose h1 {
     --at-apply: text-shadow: 
   } */
   
-  .prose p {
+  /* .prose p {
     --at-apply: font-sans 
-  }
+  } */
 </style>
 
 <!-- <style>

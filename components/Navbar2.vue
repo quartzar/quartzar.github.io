@@ -16,10 +16,10 @@
       <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
         <div class="flex-shrink-0 flex items-center">
           <img class="block md:hidden h-8 w-auto" src="/logo_small.gif" alt="quartzar" />
-          <img class="hidden md:block lg:ml-15/12 md:ml-3.5/12 h-[1.9rem] w-auto" src="/logo_full.gif" alt="quartzar" />
+          <img class="hidden md:block lg:ml-10/12 md:ml-3.5/12 h-[1.9rem] w-auto" src="/logo_full.gif" alt="quartzar" />
         </div>
-        <div class="hidden sm:block sm:ml-7.5/12 md:ml-6.25/12 lg:ml-6.75/12">
-          <div class="flex justify-between px-9 mx-auto text-gray-200 font-sans">
+        <div class="hidden sm:block sm:ml-7.5/12 md:ml-6.25/12 lg:ml-7.4/12">
+          <div class="flex justify-between px-9 mx-auto text-gray-200 font-sans text-base">
             <ContentNavigation v-slot="{ navigation }">
               <NuxtLink v-for="link of navigation" :key="link._path" :to="link._path"
                 active-class="font-bold font-sans px-2 py-1 rounded-md bg-slate-900/25 shadow-sm shadow-slate-900 transition-all ease-in-out"
