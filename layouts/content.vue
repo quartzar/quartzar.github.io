@@ -18,7 +18,7 @@
 <template>
   <div>
     <div class="transition-container prose text-zinc-200 
-                max-w-none flex-auto container
+                max-w-none flex-auto container text-justify
                 sm:mx-auto sm:max-w-3xl
                 lg:mx-auto lg:max-w-4xl">
       <slot/>
@@ -68,7 +68,7 @@
   } */
   
   .prose p {
-    --at-apply: font-sans text-justify
+    --at-apply: font-sans 
   }
 </style>
 
