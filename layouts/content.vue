@@ -29,9 +29,28 @@
 
 <style>
   
-  .nuxt-content h1{
+
+
+.prose h1 {
+  border-radius: 11px;
+  background: linear-gradient(90deg, #0a001f, #130c31, #1d1245, #2a1558, #3a176b, #4c177e, #611390, #7705a1);
+  padding-left: 12px;
+  backdrop-filter: blur( 5px );-webkit-backdrop-filter: blur( 5px );
+  -webkit-box-shadow:0px 0px 60px 15px rgba(111,0,255,0.65);
+  -moz-box-shadow: 0px 0px 60px 15px rgba(111,0,255,0.65);
+  box-shadow: 0px 0px 60px 15px rgba(111,0,255,0.65);
+}
+
+  /* .nuxt-content h1{
     --at-apply: font-center
-  }
+  } */
+
+  /* .prose h1 {
+  text-align: center;
+  font-family: sans-serif;
+  text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #00FFCC, 0 0 40px #00FFCC, 0 0 50px #00FFCC, 0 0 60px #00FFCC, 0 0 70px #00FFCC;
+} */
+
 
   /* Remove header default underline */
   .prose h2 a,
@@ -40,7 +59,7 @@
   }
   /* Set headers to use sans font */
   .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-    --at-apply: font-sans
+    --at-apply: font-sans 
   }
 
   /* H1 options */
