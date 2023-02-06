@@ -26,6 +26,17 @@ html {
   padding-top: 2px;
   padding-bottom: 5px;
   
+  /* color: #f0f0f0; */
+  /* font-size: 100px;
+  font-family: Futura; */
+  /* background-color: #666666; */
+  text-shadow: 1px 4px 4px #a957c269;
+  /* text-align: center; */
+  /* -webkit-background-clip: text; */
+    /* -moz-background-clip: text; */
+
+ 
+  
   --at-apply: text-5xl font-bold px-2
 }
 
