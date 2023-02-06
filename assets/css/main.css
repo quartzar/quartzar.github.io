@@ -14,8 +14,6 @@ html {
   --at-apply: px-2
 }
 
-
-
 .article h1 {
   border-radius: 11px;
   background: linear-gradient(90deg, #0a001f, #130c31, #1d1245, #2a1558, #3a176b, #4c177e, #611390, #7705a1);
