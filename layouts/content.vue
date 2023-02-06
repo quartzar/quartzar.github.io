@@ -20,7 +20,7 @@
   <div class="sm:mx-auto sm:max-w-4xl
               lg:mx-auto lg:max-w-5xl">
     <div class="transition-container article text-zinc-200 
-                max-w-none flex-auto container text-justify
+                max-w-none flex-auto container text-justify not-prose
                 ">
       <slot/>
     </div>
@@ -29,7 +29,7 @@
 
 
 <style>
-  .article {
+  /* .article {
     font-size: 17px;
     line-height: 24px;
     --at-apply: font-sans
@@ -50,7 +50,6 @@
     -webkit-box-shadow:0px 0px 60px 15px rgba(111,0,255,0.65);
     -moz-box-shadow: 0px 0px 60px 15px rgba(111,0,255,0.65);
     box-shadow: 0px 0px 60px 15px rgba(111,0,255,0.65);
-    /* padding-left: 7px; */
     margin-bottom: 0.75em;
     padding-top: 2px;
     padding-bottom: 5px;
@@ -86,7 +85,7 @@
     margin-top: 0.75em;
     margin-bottom: 0.75em;
     --at-apply: text-justify
-  }
+  } */
 
 
   /* .article h2 a,

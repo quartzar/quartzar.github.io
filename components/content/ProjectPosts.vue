@@ -23,7 +23,7 @@ const { data } = await useAsyncData(async () => {
     z-index: 3;
 } */
 
-.engraved {
+/* .engraved {
     font-size: 100px;
     font-family: Futura;
     background-color: #666666;
@@ -32,7 +32,7 @@ const { data } = await useAsyncData(async () => {
     background-clip: text;
     color: transparent;
     text-shadow: rgba(245,245,245,0.5) 3px 5px 1px;
- }
+ } */
 
 .project-container {
     position: relative;
