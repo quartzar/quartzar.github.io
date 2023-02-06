@@ -59,6 +59,9 @@ html {
   --at-apply: text-justify
 }
 
+.article img {
+  --at-apply: my-10 mx-auto rounded-xl shadow-[0px_0px_60px_-15px_rgba(0,0,0,1)] shadow-indigo-600 hover:shadow-indigo-600/75 transition-all ease-in-out;
+}
 
 .navbar-fixed-top {
   position: fixed;   /* fixing the position takes it out of html flow - knows
