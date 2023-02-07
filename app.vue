@@ -9,7 +9,7 @@
     
 
     <!-- Navbar -->
-    <Navbar2 class='navbar-fixed-top rounded-b-[15px] border-b border-indigo-500 shadow-2xl shadow-indigo-600/50' />
+    <Navbar2 class="animate-slide-in-down animate-count-1 ease-in-out"/>
 
 
     <!-- Rest of Page -->

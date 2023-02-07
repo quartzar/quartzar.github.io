@@ -1,6 +1,6 @@
 import { defineNuxtConfig } from 'nuxt/config';
 import transformerDirective from '@unocss/transformer-directives'
-// import { presetScrollbar } from 'unocss-preset-scrollbar'
+import Icons from 'unplugin-icons/vite'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -11,6 +11,14 @@ export default defineNuxtConfig({
   
   router: { base: '/' },
   
+  vite: {
+    plugins: [
+      Icons({
+        // feature below is experimental
+        autoInstall: true,
+      }),
+    ],
+  },
 
 
   ////////////////////
@@ -24,6 +32,10 @@ export default defineNuxtConfig({
     '@unocss/preset-uno',
     '@unocss/webpack',
     '@nuxtjs/color-mode',
+    
+    // '@iconify/vue',
+    
+    'nuxt-icon',
     // '@vueuse/nuxt',
   ],
   

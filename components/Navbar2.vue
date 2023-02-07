@@ -1,6 +1,8 @@
 <!-- dark:bg-indigo-900/50 bg-gray-900/50-->
 <template>
+<div class="navbar-fixed-top ">
   <Disclosure as="nav" class="navb-css-1 backdrop-blur-lg" v-slot="{ open }">
+    
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 relative flex items-center justify-between h-[3.7rem]">
       <!-- <div class="relative flex items-center justify-between h-[3.7rem]"> -->
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -18,7 +20,7 @@
           <img class="block md:hidden h-8 w-auto" src="/logo_small.gif" alt="quartzar" />
           <img class="hidden md:block lg:ml-10/12 md:ml-3.5/12 h-[1.9rem] w-auto" src="/logo_full.gif" alt="quartzar" />
         </div>
-        <div class="hidden sm:block sm:ml-7.5/12 md:ml-6.25/12 lg:ml-7.4/12">
+        <div class="hidden sm:block sm:ml-7.5/12 md:ml-6.25/12 lg:ml-7.4/12 h-0">
           <div class="flex justify-between px-9 mx-auto text-gray-200 font-sans text-base">
             <ContentNavigation v-slot="{ navigation }">
               <NuxtLink v-for="link of navigation" :key="link._path" :to="link._path"
@@ -32,15 +34,32 @@
         </div>
 
         <!-- Social Icons & Colour Mode -->
-        <div class="space-x-3 text-gray-500 transition ease-in-out h-7">
-          <a href="https://twitter.com/quartzar32" title="Twitter"
-            class="hover:text-gray-300 transition-all ease-in-out"></a>
-          <a href="https://github.com/Quartzar" title="GitHub"
-            class="hover:text-gray-300 transition-all ease-in-out"></a>
-          <!-- <ColorModeSwitch class="hover:text-gray-300 transition-all ease-in-out" /> -->
-          <!-- <Icon name="fa-brands:github" before the </a> /> -->
-          <!-- <Icon name="fa-brands:twitter" /> -->
-        </div>
+      </div>
+      <div class="transition">
+        <!-- <div class="space-x-3 text-gray-500 transition ease-in-out"></div> -->
+        <a href="https://twitter.com/quartzar32" title="Twitter">
+          <!-- class="hover:text-gray-300 transition-all ease-in-out"> -->
+        </a>
+        <a href="https://github.com/quartzar" title="GitHub"
+            class="hover:text-gray-300 transition-all ease-in-out">
+
+            <i class="fa fa-github github" id="github"></i>
+
+
+          <!-- class="hover:text-gray-300 transition-all ease-in-out"> -->
+          <!-- <div class="nav-i-container"> -->
+            <!-- <div class="nav-icon">
+              <FaGithub/>
+
+            </div> -->
+          <!-- </div> -->
+
+          <!-- <Icon name="fa6-brands:github" class="nav-icon"/> -->
+        </a>
+        <!-- <ColorModeSwitch class="hover:text-gray-300 transition-all ease-in-out" /> -->
+        <!-- <Icon name="fa-brands:github" before the </a> /> -->
+        <!-- <Icon name="fa-brands:twitter" /> -->
+        <!-- </div> -->
       </div>
     </div>
 
@@ -55,10 +74,18 @@
         </ContentNavigation>
       </div>
     </DisclosurePanel>
+  <!-- </div> -->
   </Disclosure>
+  <div class="navb-border"></div>
+</div>
 </template>
 
 <script setup>
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { BellIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+// import FaGithub from '~icons/fa/github'
 </script>
+
+<style>
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+</style>
