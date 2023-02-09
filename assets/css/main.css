@@ -2,6 +2,18 @@ html {
   font-family: Rubik, system-ui, sans-serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 78vh;
+  justify-content: space-between;
+}
+
+/* #footer { */
+  /* position: absolute; */
+  /* --at-apply: grid justify-center pb-5;
+} */
+
 /* .nav-icon-container { */
   /* display: flex;
   justify-content: center;

@@ -3,7 +3,7 @@
 <div class="navbar-fixed-top ">
   <Disclosure as="nav" class="navb-css-1 backdrop-blur-lg" v-slot="{ open }">
     
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 relative flex items-center justify-between h-[3.7rem]">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 relative flex items-center justify-between h-[3.2rem]">
       <!-- <div class="relative flex items-center justify-between h-[3.7rem]"> -->
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <!-- Mobile menu button-->
@@ -86,6 +86,6 @@ import { BellIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 // import FaGithub from '~icons/fa/github'
 </script>
 
-<style>
+<!-- <style>
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-</style>
+</style> -->
