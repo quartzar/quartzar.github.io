@@ -1,21 +1,21 @@
-html {
+/* html {
   font-family: Rubik, system-ui, sans-serif;
-}
+} */
 
 #app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
-  font-family: Rubik, system-ui, sans-serif;
+  font-family: Rubik, Ubuntu, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#footer {
+/* #footer { */
   /* position: absolute; */
   /* --at-apply: grid justify-center pb-5;*/
-}
+/* } */
 
 /* .nav-icon-container { */
   /* display: flex;
@@ -60,13 +60,20 @@ html {
   }
 }
 
+.glow-yellow-txt {
+  text-shadow: rgba(254,240,138,0.9) 0px 0px 5px; 
+}
+.glow-cyan-txt {
+  text-shadow: rgba(208, 236, 252, 0.5) 0px 0px 5px;
+}
+
 .article {
   font-size: 17px;
   line-height: 24px;
-  --at-apply: font-sans
+  --at-apply: font-rubik
 }
 .article p {
-  --at-apply: px-2
+  --at-apply: px-2 font-lexend
 }
 .article a {
   --at-apply: px-2
@@ -128,7 +135,7 @@ html {
 .article p {
   margin-top: 0.75em;
   margin-bottom: 0.75em;
-  --at-apply: text-justify
+  /* --at-apply: text-justify */
 }
 
 .article img {

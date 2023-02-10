@@ -46,8 +46,10 @@
 
 
 <style>
-/* Font import */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;800&display=swap');
+/* Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Rubik:ital,wght@0,400;0,500;0,800;1,400;1,500;1,800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap'); */
 
 /* GH FontAwesome Icon Import */
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");

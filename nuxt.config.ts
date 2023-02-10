@@ -67,13 +67,49 @@ export default defineNuxtConfig({
         sans: [
           {
             name: 'Rubik',
-            weights: ['400', '700', '800'],
+            weights: ['400', '800'],
           }
         ],
         serif: 'Poppins',
         mono: ['Fira Code', 'Fira Mono:400,700'],
         // custom ones
-        lobster: 'Lobster',
+        rubik: [
+          {
+            name: 'Rubik',
+            weights: ['400','500', '800'],
+          }
+        ],
+        ubuntu: [
+          {
+            name: 'Ubuntu',
+            weights: ['400', '700'],
+          }
+        ],
+        raleway: [
+          {
+            name: 'Raleway',
+            weights: ['500', '700'],
+          }
+        ],
+        scpro: [
+          {
+            name: 'Source Code Pro',
+            weights: ['500', '700'],
+          }
+        ],
+        jbmono: [
+          {
+            name: 'JetBrains Mono',
+            weights: ['500', '700'],
+          }
+        ],
+        lexend: [
+          {
+            name: 'Lexend',
+            weights: ['400', '700'],
+          }
+        ],
+       
         // lato: [
         //   {
         //     name: 'Lato',
