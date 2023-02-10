@@ -1,5 +1,4 @@
----
-# navTitle: 'Home'
+<!-- ---
 navigation: false
 head.title: 'quartzar | Home'
 head.description: 'WIP Portfolio Site, generated with Nuxt3 & Nuxt Content V2, by Joseph Dorn'
@@ -8,7 +7,6 @@ layout: 'home'
 
 # Joseph Dorn
 
-<!-- ## Joseph Dorn -->
 
 Hey, I'm Joseph, a third year Astrophysics BSc undergraduate at Cardiff University.
 
@@ -49,4 +47,4 @@ Donec a faucibus odio, in porttitor dolor. Suspendisse posuere orci ipsum, nec t
 
 Cras leo elit, semper at venenatis id, euismod at tortor. Curabitur sed lorem at eros sodales maximus. Proin urna lectus, commodo eget maximus vel, tristique in ex. Praesent eget velit sodales, sollicitudin elit dictum, ultricies mi. Nulla sit amet tristique nisi. Proin hendrerit ante eget ultrices facilisis. Praesent elementum risus et sem ultrices, nec consectetur magna pretium. Nunc tincidunt, turpis nec faucibus congue, quam libero pulvinar nisi, id commodo orci dui et augue. Ut libero tortor, placerat sit amet auctor ac, accumsan sit amet est. Vestibulum finibus tortor ac sapien tristique laoreet. Mauris eu metus pharetra, scelerisque ex ac, rhoncus urna. Praesent nibh quam, accumsan egestas justo vitae, rutrum vestibulum sapien. 
 
-Donec a faucibus odio, in porttitor dolor. Suspendisse posuere orci ipsum, nec tristique tellus cursus quis. Praesent diam massa, molestie ac nibh a, varius ultrices mi. Cras consequat dolor a orci egestas, in laoreet risus pretium. Quisque in nunc viverra, tincidunt metus id, facilisis erat. Cras dui erat, faucibus volutpat tempus eget, ullamcorper sollicitudin nunc. Praesent risus purus, tempor quis placerat vel, aliquet vel odio. Morbi porta sollicitudin turpis nec congue. Nulla ut blandit urna, a vestibulum nulla. Aliquam eu commodo diam. Pellentesque sed vehicula velit, et tempus elit. Fusce bibendum facilisis nunc non iaculis. Fusce porttitor est sed odio luctus sodales. Integer faucibus elementum maximus.
+Donec a faucibus odio, in porttitor dolor. Suspendisse posuere orci ipsum, nec tristique tellus cursus quis. Praesent diam massa, molestie ac nibh a, varius ultrices mi. Cras consequat dolor a orci egestas, in laoreet risus pretium. Quisque in nunc viverra, tincidunt metus id, facilisis erat. Cras dui erat, faucibus volutpat tempus eget, ullamcorper sollicitudin nunc. Praesent risus purus, tempor quis placerat vel, aliquet vel odio. Morbi porta sollicitudin turpis nec congue. Nulla ut blandit urna, a vestibulum nulla. Aliquam eu commodo diam. Pellentesque sed vehicula velit, et tempus elit. Fusce bibendum facilisis nunc non iaculis. Fusce porttitor est sed odio luctus sodales. Integer faucibus elementum maximus. -->
