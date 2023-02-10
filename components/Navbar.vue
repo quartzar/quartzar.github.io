@@ -19,7 +19,7 @@
               src="/logo_small.gif" 
               alt="quartzar"/>
               <!-- Name -->
-              <span class="font-rubik font-bold text-xl text-cyan-100 ml-2">
+              <span class="font-rubik font-bold text-xl text-cyan-100 ml-2 glow-cyan-txt">
                 Joseph Dorn
               </span>
             </a>
@@ -30,8 +30,8 @@
               <div class="relative flex ml-0">
                 <ContentNavigation v-slot="{ navigation }">
                   <NuxtLink v-for="link of navigation" :key="link._path" :to="link._path"
-                    active-class="px-2 py-2 rounded-md font-rubik text-md text-cyan-200 underline underline-offset-6 transition duration-150 ease-in-out"
-                    class="px-2 py-2 rounded-md font-rubik text-sm font-medium text-cyan-100 no-underline hover:underline hover:underline-offset-6 transition duration-150 ease-in-out">
+                    active-class="px-2 py-2 rounded-md font-rubik text-md text-cyan-200 glow-cyan-txt underline underline-offset-6 transition duration-150 ease-in-out"
+                    class="px-2 py-2 rounded-md font-rubik text-sm font-medium text-cyan-100 glow-cyan-txt no-underline hover:underline hover:underline-offset-6 transition duration-150 ease-in-out">
                     {{ link.navTitle || link.title }}
                   </NuxtLink>
                 </ContentNavigation>

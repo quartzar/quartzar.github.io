@@ -35,7 +35,7 @@ const { data } = await useAsyncData(async () => {
  } */
 
 .project-container {
-    position: relative;
+    /* position: relative; */
     /* justify-content: center; */
     /* display: flex; */
     /* align-items: center; */

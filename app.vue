@@ -1,25 +1,31 @@
 <template>
-  <div id="app">
+  <div class="app">
 
     <Html lang="en" />
     <Meta property="og:image" content="/cover.jpg" />
-    <Meta name="twitter:card" content="summary_large_image" />
+    <!-- <Meta name="twitter:card" content="summary_large_image" /> -->
 
+    <!-- <div id="content-wrap"> -->
+    <div class="min-h-screen bg-fixed bg-slate-900 pb-14">
 
       <!-- Navbar -->
-      <Navbar class="navbar-fixed-top"/>
-      
-      <!-- Rest of Page -->
-      <div class="scroller min-h-screen bg-fixed bg-slate-900">
+      <Navbar id="navbar" />
 
-      
+      <!-- Rest of Page -->
+      <!-- <div class="min-h-screen bg-fixed bg-slate-900"> -->
+
+
       <!-- <div class="scroller"/> -->
-        <NuxtPage class="md:mt-28" />
-        
-        <Footer class="bg-slate-900" />
-        
+      <NuxtPage class="mt-10 sm:mt-12 md:mt-16 lg:mt-24" />
+
+
+
+      <!-- </div> -->
+      
     </div>
-    
+    <Footer class="bg-slate-900" id="footer" />
+  </div>
+</template>
     
 
       <!-- Navbar -->
@@ -33,8 +39,7 @@
         <!-- <NuxtPage class="md:mt-28" /> -->
         <!-- <Footer/> -->
     <!-- </div> -->
-  </div>
-</template>
+
 
 
 
@@ -79,12 +84,12 @@
   background: transparent;
 } */
 
-#app-old {
+/* #app-old { */
   /* font-family: Avenir, Helvetica, Arial, sans-serif; */
-  font-family: Rubik, system-ui, sans-serif;
+  /* font-family: Rubik, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
   /* scrollbar-color: #135aa1; */
   /* margin-top: 60px; */
-}
+/* } */
 </style>
