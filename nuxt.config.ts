@@ -67,7 +67,7 @@ export default defineNuxtConfig({
         sans: [
           {
             name: 'Rubik',
-            weights: ['400', '800'],
+            weights: ['400', '700', '800'],
           }
         ],
         serif: 'Poppins',
