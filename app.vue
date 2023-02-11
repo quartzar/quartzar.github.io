@@ -9,14 +9,14 @@
     <div class="min-h-screen bg-fixed bg-slate-900 pb-14">
 
       <!-- Navbar -->
-      <Navbar id="navbar" />
+      <Navbar id="navbar transition duration-150 ease-in-out" />
 
       <!-- Rest of Page -->
       <!-- <div class="min-h-screen bg-fixed bg-slate-900"> -->
 
 
       <!-- <div class="scroller"/> -->
-      <NuxtPage class="mt-10 sm:mt-12 md:mt-16 lg:mt-24" />
+      <NuxtPage class="mt-10 sm:mt-12 md:mt-16 lg:mt-24 transition-container" />
 
 
 

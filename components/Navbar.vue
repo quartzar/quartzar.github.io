@@ -11,11 +11,11 @@
         <!-- Left-side Container -->
         <div class="flex items-center">
           <!-- Icon & Name -->
-          <div class="flex-shrink-0">
-            <a class="flex items-center nuxt-link-exact-active"
+          <div class="flex-shrink-0 ">
+            <a class="flex items-center nuxt-link-exact-active "
                 href="/">
               <!-- Icon -->
-              <img class="block h-9 w-auto" 
+              <img class="block h-9 w-auto " 
               src="/logo_small.gif" 
               alt="quartzar"/>
               <!-- Name -->
