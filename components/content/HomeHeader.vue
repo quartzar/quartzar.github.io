@@ -22,7 +22,7 @@ defineProps({
                 <p class="mt-3 max-w-md mx-auto font-ubuntu text-cyan-100 sm:text-lg md:mt-5 md:text-xl md:max-w-2xl glow-cyan-txt">
                     <slot name="description"/>
                 </p>
-                <iframe height=900 width=1400 title="test" src="./nbody1.html"></iframe>
+                <!-- <iframe height=900 width=1400 title="test" src="./nbody1.html"></iframe> -->
             </div>
         </header>
     </div>
