@@ -1,54 +1,19 @@
 <template>
-  <div class="app">
+  <div id="app" class="bg-slate-900">
+    <!-- Navbar -->
+    <Navbar id="navbar" />
 
-    <Html lang="en" />
-    <Meta property="og:image" content="/cover.jpg" />
-    <!-- <Meta name="twitter:card" content="summary_large_image" /> -->
-
-    <!-- <div id="content-wrap"> -->
-    <div class="min-h-screen bg-fixed bg-slate-900 pb-14">
-
-      <!-- Navbar -->
-      <Navbar id="navbar transition duration-150 ease-in-out" />
-
-      <!-- Rest of Page -->
-      <!-- <div class="min-h-screen bg-fixed bg-slate-900"> -->
-
-
-      <!-- <div class="scroller"/> -->
-      <NuxtPage class="mt-10 sm:mt-12 md:mt-16 lg:mt-24 transition-container" />
-
-
-
-      <!-- </div> -->
-      
+    <div id="page-container" class="flex flex-col min-h-screen ">
+      <div id="content-wrap" class="flex-grow">
+        <!-- Rest of Page -->
+        <NuxtPage class="transition-container" />
+      </div>
     </div>
-    <Footer class="bg-slate-900" id="footer" />
+
+    <!-- Footer -->
+    <Footer id="footer" />
   </div>
 </template>
-    
-
-      <!-- Navbar -->
-      <!-- <Navbar class="navbar-fixed-top"/> -->
-      <!-- class="animate-slide-in-down animate-count-1 ease-in-out"/> -->
-
-
-      <!-- Rest of Page -->
-      <!-- <div class="scroller min-h-screen bg-fixed bg-slate-900"> -->
-        <!-- /* style="url('/background.png')"> */ -->
-        <!-- <NuxtPage class="md:mt-28" /> -->
-        <!-- <Footer/> -->
-    <!-- </div> -->
-
-
-
-
-<!-- <template>
-  <NuxtLayout>
-    <NuxtPage class="rounded-2xl shadow-[0px_0px_60px_-15px_rgba(0,0,0,0.3)] shadow-indigo-600 border border-indigo-600" />
-  </NuxtLayout>
-</template> -->
-
 
 <style>
 /* Fonts import */
@@ -58,6 +23,38 @@
 
 /* GH FontAwesome Icon Import */
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+
+#app {
+  position: relative;
+  min-height: 100vh;
+}
+
+#page-container {
+  position: relative;
+  min-height: calc(100vh - 3rem - 2.5rem); 
+
+}
+
+#content-wrap {
+  padding-bottom: 1.5rem;    
+}
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.7rem;    /* Footer height */
+}
+
+
+
 
 
 
@@ -93,3 +90,31 @@
   /* margin-top: 60px; */
 /* } */
 </style>
+
+
+
+
+<!-- <template>
+  <div class="app">
+
+    <Html lang="en" />
+    <Meta property="og:image" content="/cover.jpg" /> -->
+    <!-- <Meta name="twitter:card" content="summary_large_image" /> -->
+
+    <!-- <div id="content-wrap"> -->
+    <!-- <div class="flex flex-col min-h-screen bg-fixed bg-slate-900"> -->
+
+      <!-- Navbar -->
+      <!-- <Navbar id="navbar" class="fixed w-full top-0 transition duration-150 ease-in-out" /> -->
+
+      <!-- Rest of Page -->
+      <!-- <div class="min-h-screen bg-fixed bg-slate-900"> -->
+
+      <!-- <div class="scroller"/> -->
+      
+      <!-- <NuxtPage class="mt-10 sm:mt-12 md:mt-16 lg:mt-24 transition-container flex-grow" />
+
+    <Footer class="bg-slate-900" id="footer" />
+  </div>
+  </div>
+</template> -->

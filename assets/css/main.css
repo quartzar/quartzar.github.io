@@ -21,18 +21,19 @@
   padding-bottom: 3.5rem;    /* Footer height */
 /*} */
 
-#navbar {
-  position: sticky;
+/* #navbar {
+  position: fixed;
   top: 0;
   z-index: 10;
+  width: 100%;
 }
 
 #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 3.7rem;            /* Footer height */
-}
+  height: 3.7rem;           
+} */
 
 
 
@@ -73,7 +74,14 @@
 
 /* Glowing Text */
 .glow-green-txt {
-  text-shadow: rgba(123,255,0,1) 0px 0px 105px; 
+  text-shadow: rgba(123,255,0,1) 0px 0px 5px; 
+}
+.glow-indigo-txt {
+  text-shadow: rgb(188, 144, 255) 0px 0px 3px; 
+}
+
+.glow-yellow-sm-txt {
+  text-shadow: rgb(217, 255, 0) 0px 0px 2px; 
 }
 
 .glow-yellow-txt {
@@ -83,17 +91,17 @@
   text-shadow: rgba(208, 236, 252, 0.5) 0px 0px 5px;
 }
 
-.article {
+/* .article {
   font-size: 17px;
   line-height: 24px;
   --at-apply: font-rubik
-}
-.article p {
+} */
+/* .article p {
   --at-apply: px-2 font-lexend
 }
 .article a {
   --at-apply: px-2
-}
+} */
 
 /* .article h1 {
   justify-content: center;
@@ -122,7 +130,7 @@
   /* background-color: #666666; */
     /* padding-left: 7px; */
 
-.article h2 {
+/* .article h2 {
   margin-top: 0.75em;
   margin-bottom: -0.25em;
   --at-apply: text-3xl font-bold 
@@ -149,8 +157,8 @@
 .article p {
   margin-top: 0.75em;
   margin-bottom: 0.75em;
-  /* --at-apply: text-justify */
-}
+
+} */
 
 .article img {
   --at-apply: my-10 mx-auto rounded-xl shadow-[0px_0px_60px_-15px_rgba(0,0,0,1)] shadow-indigo-600 hover:shadow-indigo-600/75 transition-all ease-in-out;
