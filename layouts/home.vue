@@ -6,7 +6,7 @@
                     Joseph Dorn
                 </h1>
                 <p class="mt-3 max-w-md mx-auto font-ubuntu text-cyan-100 sm:text-lg md:mt-5 md:text-xl md:max-w-2xl glow-cyan-txt">
-                    Welcome to my website! Here you can find some projects I'm working on, with blogs coming soon<sup>TM</sup>. I'm still working on this site, so it's a bit bare at the moment. Enjoy your stay!
+                    Welcome to msdy website! Here you can find some projects I'm working on, with blogs coming soon<sup>TM</sup>. I'm still working on this site, so it's a bit bare at the moment. Enjoy your stay!
                 </p>
             </div>
         
