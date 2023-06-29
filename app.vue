@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-slate-900">
+  <div id="app" class="page-bg">
     <!-- Navbar -->
     <Navbar id="navbar" />
 

@@ -181,7 +181,10 @@
   }
 }
 
-
+.page-bg {
+  background: rgb(20,30,55);
+  background: linear-gradient(90deg, rgba(20,30,55,1) 0%, rgba(15,23,42,1) 10%, rgba(15,23,42,1) 90%, rgba(20,30,55,1) 100%);
+}
 
 
 .cssbg {
