@@ -1,13 +1,102 @@
 ---
 title: 'N-body Modelling of Young Stellar Systems'
 description: 'Harnessing the power of C++ and CUDA, I modeled the cosmic dance of young stars for my final year Astrophysics project, unveiling the gravitational mysteries of stellar cores through dynamic N-body simulations.'
-date: 'June 27, 2023'
+subtitle: 'Journey through the stages of my final year Astrophysics project.'
+date: '2023-06-23'
 tag: 'C++ | CUDA'
+layout: 'project'
 ---
 
-Hello!
+# Hello!
 
-Here's a really cool JavaScript N-body simulation.
+## This is the final code for my N-body simulation.
+
+Harnessing the power of C++ and CUDA, I modeled the cosmic dance of young stars for my final year Astrophysics project, unveiling the gravitational mysteries of stellar cores through dynamic N-body simulations.'
+subtitle: 'Journey through the stages of my final year Astrophysics project. *Does this work?* _YES_. **Maybe**.
+
+placeholder
+
+
+::terminal
+```cpp
+float3 r;
+r.x = pos[j].x - pos[i].x;
+r.y = pos[j].y - pos[i].y;
+r.z = pos[j].z - pos[i].z;
+```
+::
+
+
+placeholder
+
+::terminal
+```cpp
+float calculateGravitationalEnergy(float4* pos, int N)
+{
+    float gravitationalEnergy = 0.0f;
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < N; j++)
+        {
+            if (i==j)
+                continue;
+            
+            float3 r;
+            r.x = pos[j].x - pos[i].x;
+            r.y = pos[j].y - pos[i].y;
+            r.z = pos[j].z - pos[i].z;
+            
+            float distSqr = r.x * r.x + r.y * r.y + r.z * r.z;
+            
+            gravitationalEnergy += float(BIG_G) * pos[i].w * pos[j].w / sqrtf(distSqr);
+            // std::cout << "Distance Sqr ->> " << distSqr << std::endl;
+            // std::cout << "Distance Sqrt ->> " << sqrtf(distSqr) << std::endl;
+            // std::cout << "Gravitational Energy ->> " << gravitationalEnergy << std::endl;
+        }
+    }
+    return gravitationalEnergy * .5f;   // .5f because each pairwise interaction is counted twice
+}
+```
+::
+
+::callout
+This is the final code for my N-body simulation.
+
+```cpp
+hi
+```
+::
+
+```cpp
+float calculateGravitationalEnergy(float4* pos, int N)
+{
+    float gravitationalEnergy = 0.0f;
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < N; j++)
+        {
+            if (i==j)
+                continue;
+            
+            float3 r;
+            r.x = pos[j].x - pos[i].x;
+            r.y = pos[j].y - pos[i].y;
+            r.z = pos[j].z - pos[i].z;
+            
+            float distSqr = r.x * r.x + r.y * r.y + r.z * r.z;
+            
+            gravitationalEnergy += float(BIG_G) * pos[i].w * pos[j].w / sqrtf(distSqr);
+            // std::cout << "Distance Sqr ->> " << distSqr << std::endl;
+            // std::cout << "Distance Sqrt ->> " << sqrtf(distSqr) << std::endl;
+            // std::cout << "Gravitational Energy ->> " << gravitationalEnergy << std::endl;
+        }
+    }
+    return gravitationalEnergy * .5f;   // .5f because each pairwise interaction is counted twice
+}
+```
+
+
+
 
 ```cpp
 //

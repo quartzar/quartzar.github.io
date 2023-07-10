@@ -5,8 +5,18 @@
 // import { useRoute } from 'vue-router'
 // import { useAsyncData } from 'nuxt3'
 
-const { data } = await useAsyncData(async () => {
-    return queryContent('/projects/').find()
+// const { data } = await useAsyncData(async () => {
+//     return queryContent('/projects/').find()
+// })
+
+// retrieve data
+let { data } = await useAsyncData('projects', async () => {
+  const projects = await queryContent('/projects/').find()
+
+  // sort projects by date (newest first)
+  projects.sort((a, b) => new Date(b.date) - new Date(a.date))
+
+  return projects
 })
 
 </script>
@@ -24,7 +34,7 @@ const { data } = await useAsyncData(async () => {
 
                             <section class="col-span-2 ">
                                 <a href="/projects">
-                                    <h2 class=" font-rubik font-bold text-yellow-200 text-3xl sm:text-4xl glow-yellow-txt pb-4">
+                                    <h2 class=" font-rubik font-black text-yellow-200 text-3xl sm:text-4xl glow-yellow-txt pb-4">
                                         <slot name="heading" />
                                     </h2>
                                 </a>
@@ -35,17 +45,17 @@ const { data } = await useAsyncData(async () => {
                                         :key="post._id">
                             
                                             <NuxtLink :to="post._path" class="hover:animate-spin">
-                                                <div class="relative z-10 read-more-container hover:scale-101 transition ease-in-out delay-50 duration-400">
+                                                <div class="relative z-3 read-more-container hover:scale-101 transition ease-in-out delay-50 duration-400">
                                                 <small
                                                     class="text-yellow-400 font-ubuntu uppercase tracking-widest text-sm glow-yellow-sm-txt group-hover:text-yellow-300 transition ease-in-out duration-600">
                                                     {{ post.tag }}
                                                 </small>
                                                 <h3
-                                                    class="text-2xl font-rubik font-bold text-indigo-200 glow-indigo-txt mt-3">
+                                                    class="text-2xl font-rubik font-black text-indigo-200 glow-indigo-txt mt-3">
                                                     {{ post.title }}
                                                 </h3>
-                                                <p class="text-slate-300 font-rubik font-bold mb-3 mt-1 text-lg">
-                                                    {{ post.date }}
+                                                <p class="text-slate-300 font-rubik font-black mb-3 mt-1 text-lg">
+                                                    {{ new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) }}
                                                 </p>
                                                 <p class="text-indigo-200 font-ubuntu text-lg">
                                                     {{ post.description }}

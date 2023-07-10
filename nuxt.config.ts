@@ -42,7 +42,7 @@ export default defineNuxtConfig({
   
   /////////////////////
   buildModules: [
-    '@unocss/nuxt',
+    '@unocss/nuxt'
   ],
   
   
@@ -76,7 +76,7 @@ export default defineNuxtConfig({
         rubik: [
           {
             name: 'Rubik',
-            weights: ['400','500', '800'],
+            weights: ['400','600','700', '800'],
           }
         ],
         ubuntu: [

@@ -19,7 +19,7 @@
               src="/logo_small.gif" 
               alt="quartzar"/>
               <!-- Name -->
-              <span class="font-rubik font-bold text-xl text-cyan-100 ml-2 glow-cyan-txt">
+              <span class="font-rubik font-black text-xl text-cyan-100 ml-2 glow-cyan-txt">
                 Joseph Dorn
               </span>
             </a>

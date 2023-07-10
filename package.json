@@ -39,6 +39,7 @@
     "unplugin-icons": "^0.15.2"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.0.14"
+    "@heroicons/vue": "^2.0.14",
+    "vue-typed-js": "^0.1.2"
   }
 }
