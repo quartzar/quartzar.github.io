@@ -38,7 +38,9 @@
     background: #0000003b;
     color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
     width: 100%;
     margin: 20px auto;
     -webkit-box-shadow: 4px 4px 32px -8px rgba(0,0,0,1);
@@ -50,7 +52,8 @@
 .terminal-header {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    padding-top: 5px;
 }
 
 .terminal-buttons {
@@ -77,6 +80,8 @@
 }
 
 .terminal-body {
+    /* margin-bottom: 0; */
+
     white-space: pre-wrap;
     /* CSS 3 */
     white-space: -moz-pre-wrap;
@@ -87,6 +92,9 @@
     /* Opera 7 */
     word-wrap: break-word;
     /* Internet Explorer 5.5+ */
-    overflow: auto; /* add a scrollbar when content overflows */
+    overflow: auto; 
+    /* add a scrollbar when content overflows */
 }
+
+
 </style>
