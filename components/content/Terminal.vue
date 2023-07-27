@@ -21,6 +21,11 @@
                 <div class="terminal-button terminal-button-yellow"></div>
                 <div class="terminal-button terminal-button-green"></div>
             </div>
+            <div class="title-container">
+                <div class="terminal-title">
+                    {{ title }}
+                </div>
+            </div>
         </div>
         <pre class="terminal-body">
             <ContentSlot :use="$slots.default"/>
@@ -29,13 +34,20 @@
 </template>
   
 <script>
-
+export default {
+  props: {
+    title: {
+      type: String,
+      required: false,
+      default: '',
+    },
+  },
+};
 </script>
 
 <style scoped>
-
 .terminal {
-    background: #0000003b;
+    background: #6f5e793b;
     color: #fff;
     border-radius: 10px;
     padding-left: 12px;
@@ -43,15 +55,27 @@
     padding-top: 5px;
     width: 100%;
     margin: 20px auto;
-    -webkit-box-shadow: 4px 4px 32px -8px rgba(0,0,0,1);
-    -moz-box-shadow: 4px 4px 32px -8px rgba(0,0,0,1);
-    box-shadow: 4px 4px 32px -8px rgba(0,0,0,1);
+    -webkit-box-shadow: 4px 4px 32px -8px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 4px 4px 32px -8px rgba(0, 0, 0, 1);
+    box-shadow: 4px 4px 32px -8px rgba(0, 0, 0, 1);
     --at-apply: font-jbmono;
+}
+
+.title-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.terminal-title {
+    margin-top: -5px;
+    margin-right: 5px;
+    --at-apply: font-jbmono text-cyan-200 glow-cyan-txt font-italic font-bold text-15px;
 }
 
 .terminal-header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-bottom: 5px;
     padding-top: 5px;
 }
@@ -61,8 +85,8 @@
 }
 
 .terminal-button {
-    height: 15px;
-    width: 15px;
+    height: 13px;
+    width: 13px;
     border-radius: 50%;
     margin-right: 5px;
 }
@@ -92,9 +116,7 @@
     /* Opera 7 */
     word-wrap: break-word;
     /* Internet Explorer 5.5+ */
-    overflow: auto; 
+    overflow: auto;
     /* add a scrollbar when content overflows */
 }
-
-
 </style>
