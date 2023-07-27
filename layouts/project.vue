@@ -38,8 +38,15 @@ let observer;
 
 const route = useRoute();
 
-const { data } = await useAsyncData(`content-${route.path}`, () =>
-  queryContent().where({ _path: route.path }).findOne()
+// remove trailing slash from path
+const actualPath = route.path.replace(/\/$/, '');
+
+// const { data } = await useAsyncData(`content-${route.path}`, () =>
+//   queryContent().where({ _path: route.path }).findOne()
+// )
+
+const { data } = await useAsyncData(`content-${actualPath}`, () =>
+  queryContent().where({ _path: actualPath }).findOne()
 )
 
 // console.log(data.value.body.toc);
