@@ -76,7 +76,7 @@ export default {
 .terminal-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: -10px;
     padding-top: 5px;
 }
 
@@ -104,8 +104,8 @@ export default {
 }
 
 .terminal-body {
-    /* margin-bottom: 0; */
-
+    margin-top: 20px;
+    padding-bottom: 20px;
     white-space: pre-wrap;
     /* CSS 3 */
     white-space: -moz-pre-wrap;
@@ -118,5 +118,6 @@ export default {
     /* Internet Explorer 5.5+ */
     overflow: auto;
     /* add a scrollbar when content overflows */
+    --at-apply: flex justify-content;
 }
 </style>
