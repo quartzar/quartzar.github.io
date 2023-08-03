@@ -1,5 +1,5 @@
 <template>
-    <ul class="list-disc space-y-1 pl-5 pb-3 ">
+    <ul class="list-disc space-y-1 pl-5 py-3 ">
         <slot />
     </ul>
 </template>
