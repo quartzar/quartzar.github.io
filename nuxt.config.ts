@@ -149,6 +149,14 @@ export default defineNuxtConfig({
     highlight: {
       // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
       theme: 'solarized-light'
+    },
+    markdown: {
+      remarkPlugins: [
+        'remark-math',
+      ],
+      rehypePlugins: [
+        ['rehype-katex', { output: 'html' }]
+      ]
     }
   },
 

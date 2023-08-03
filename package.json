@@ -40,6 +40,8 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.14",
+    "rehype-katex": "^6.0.3",
+    "remark-math": "^5.1.1",
     "vue-typed-js": "^0.1.2"
   }
 }

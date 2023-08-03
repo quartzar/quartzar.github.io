@@ -24,6 +24,9 @@
 /* GH FontAwesome Icon Import */
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
+/* KaTeX Import */
+@import url("https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css");
+
 
 
 #app {
