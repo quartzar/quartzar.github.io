@@ -50,7 +50,7 @@ const { data } = await useAsyncData(`content-${actualPath}`, () =>
 )
 
 // console.log(data.value.body.toc);
-console.log(data.value.body);
+// console.log(data.value.body);
 
 
 onMounted(() => {
@@ -157,7 +157,7 @@ const { data } = await useAsyncData(`content-${actualPath}`, () =>
                     <ul v-if="link.children">
                       <li
                         @click.stop="tableOfContentsHeadingClick(childLink)"
-                        class=" ml-0"
+                        class=" ml-0 mt-2"
                         v-for="childLink of link.children"
                         :key="childLink.id"
                       >
@@ -209,7 +209,11 @@ main :deep(li) {
 }
 
 main :deep(p) {
-  --at-apply: font-ubuntu text-slate-100 text-18.5px glow-cyan-txt font-medium py-2 leading-relaxed;
+  --at-apply: font-ubuntu text-cyan-100 text-18.5px glow-cyan-txt font-medium py-2 leading-relaxed;
+}
+
+main :deep(.math-display) {
+  --at-apply: text-xl text-slate-200 tracking-wider;
 }
 
 main :deep(a:not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a):not(.toc-item)) {
@@ -217,7 +221,7 @@ main :deep(a:not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a):not(.to
 }
 
 main :deep(pre code) {
-  --at-apply: text-17px font-jbmono;
+  --at-apply: text-16px font-jbmono;
 }
 
 .toc-item-link {
@@ -225,7 +229,7 @@ main :deep(pre code) {
 }
 
 .vertical-line {
-  margin-right: 8px; /* You can adjust this to control the space between the vertical line and the text */
+  margin-right: 8px; /* Adjust this to control the space between the vertical line and the text */
 }
 
 .child-text {
