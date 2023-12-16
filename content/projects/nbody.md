@@ -102,7 +102,7 @@ $$
     \mathbf{a}_i\approx -G \sum_{1\leq j\leq N}\frac{m_{j}\mathbf{r}_{ij}}{(\|\mathbf{r}_{ij}\|^2+\epsilon^2)^{\frac{3}{2}}},
 $$
 
-where $\mathbf{a}_i$ is the acceleration of body $i$, $\mathbf{r}_{ij}$ is the distance vector between bodies $i$ and $j$, and $\epsilon$ is the softening parameter. Notice that $m_i$ is not required anymore, as $\mathbf{a}_i=\mathbf{F}_i/m_i$. Let's take a look at how this would look in code:
+where $\mathbf{a}_i$ is the acceleration of body $i$, $\mathbf{r}_{ij}$ is the distance vector between bodies $i$ and $j$, and $\epsilon$ is the softening parameter. Notice that $m_i$ is not required anymore, as $\mathbf{a}_i=\mathbf{F}_i/m_i$. Let's take a look at how this would look programatically:
 
 ::terminal{title="CPU Force Calculation"}
 ```cpp
